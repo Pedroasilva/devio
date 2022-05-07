@@ -1,8 +1,5 @@
 <h1 align="center">Backend</h1>
 
-<p align="center">
-  <img align="center" src="https://imgur.com/09LYhWW.png" alt="banner"/>
-</p>
 <br>
 
 ## 🛠️ Guia de instalação 
