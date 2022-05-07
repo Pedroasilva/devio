@@ -4,6 +4,9 @@
 
 ## 🛠️ Guia de instalação 
 
+Por razões de compatibilidade, é recomendado o uso de:
+- Node.js 16.15.0
+
 Clone o repositório
 
 ```sh
