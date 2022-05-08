@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  font-size: calc(10px + 2vmin);
+}
+
+#logoNav{
+  float: left;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+#logoNav img{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height:20px;
+  width:20px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color:#0D4B2E !important;
+}
+
+.nav-link{
+  margin-right: 5vw
+}
