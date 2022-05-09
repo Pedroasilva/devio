@@ -1,7 +1,8 @@
 import { Navbar,Container, Nav } from 'react-bootstrap';
 
 export function Header(){
-    return  <Navbar bg="success" expand="lg" sticky="top">
+    return(
+            <Navbar bg="success" expand="lg">
                 <Navbar.Brand href="#pedidos" className="text-white">
                     <div id="logoNav">
                         <img src="/icons/logo.png" />
@@ -9,7 +10,7 @@ export function Header(){
                     fastfood
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav" className="d-flex justify-content-end me-auto">
+                <Navbar.Collapse id="basic-navbar-nav">
                     <Nav id="itensNavBar" variant="pills" defaultActiveKey="#pedidos">
                         <Nav.Link href="#pedidos" className="text-white">Pedidos</Nav.Link>
                         <Nav.Link href="#cozinha" className="text-white">Cozinha</Nav.Link>
@@ -17,4 +18,5 @@ export function Header(){
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
+    )
 }

@@ -68,5 +68,17 @@ button {
 }
 
 .nav-link{
-  margin-right: 5vw
+  margin-left: 5vw
+}
+
+.showProduto{
+  border-radius: 30px !important;
+}
+
+.showProduto-top{
+  border-top-left-radius: 30px !important;
+  border-top-right-radius: 30px !important;
+  position: relative;
+  height: 70px;
+  width: 100%;
 }

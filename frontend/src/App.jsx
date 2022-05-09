@@ -1,34 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css'
-import api from './config/Api'
-import { useEffect, useState } from 'react';
 import { Header } from './Header';
+import { Container } from 'react-bootstrap';
+import Index from './pedidos/Index';
 
 function App() {
-
-  const [produtos, setProdutos] = useState(null); 
-
-  useEffect(() => {
-    async function carregarProduto(){
-      const produtos = await api.get('produtos');
-      const { data } = produtos;
-      setProdutos(data.data);
-    }
-
-    carregarProduto();
-
-  }, []);
   
   return (
 
     <div>
       <Header/>
-      { 
-        produtos ? produtos.map(item => {
-          return <p>{ item.nome }</p>
-        }) : null
-      }
+      <Container className="mt-5">
+        <Index/>
+      </Container>
     </div>
   )
 }
